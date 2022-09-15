@@ -1,0 +1,25 @@
+ALGORITHM algorithm_name
+VAR
+    arr := ARRAY_OF integer [n];
+    i,j,n,KEY := integer
+BEGIN
+    whrit("remplire arr")
+    read arr
+    
+    n = arr[length];
+
+    FOR i FROM 1 TO i<n STEP 1  DO
+        KEY= arr[i];
+        j=i-1;
+    END_FOR
+
+    WHILE (j>=0 && arr[j] > KEY) DO
+        arr[j+1]=arr[j];
+        j=j-1
+    END_WHILE
+
+    arr[j+1] = KEY;
+
+read arr;
+
+END
